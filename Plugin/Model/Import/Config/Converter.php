@@ -30,10 +30,6 @@ class Converter
             $productModel = 'Firebear\ImportExport\Model\Import\Product';
             $result['entities']['catalog_product']['model'] = $productModel;
         }
-        if (isset($result['entities']['catalog_product']['types']['downloadable'])) {
-            $downloadableModel = 'Firebear\ImportExport\Model\Import\Product\Type\Downloadable';
-            $result['entities']['catalog_product']['types']['downloadable']['model'] = $downloadableModel;
-        }
         return $result;
     }
 }
